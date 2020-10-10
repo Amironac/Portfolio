@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+        @media(max-width:500px){
+          #biografija{
+            display: flex;
+            flex-direction: row;
+            
+            
+          }
+        }
+      </style>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <link rel="stylesheet" href="CSS/product.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+   <nav class="site-header navbar navbar-expand-lg ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+    <span>
+        <img src="https://img.icons8.com/android/34/ffffff/menu.png" id="hamburger"/>
+      </span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-md-center " id="navbarsExample08"
+  style="margin-right:20%;margin-left:5%;">
+    
+    <ul class="navbar-nav ml-auto " style="font-size: 20px;">
+      <li class="nav-item active">
+        <a class="nav-link" href="/biografija">Biografija <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/omeni">O meni</a>
+      </li>
+      
+      <li class="nav-item ">
+        <a class="nav-link" href="/kontakt" id="" >Kontakt</a>
+        
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      <div class="position-relative overflow-hidden  text-center bg-light" style="z-index: 1;
+      background: url('Slike/pozadina.jpg') no-repeat center center/cover">
+        <div style="position: relative;width: 100%;height:100%;z-index:2;background-color: rgba(0, 0, 0, 0.4);
+        padding: 11% 0% 11% 0%;">
+<div class="container p-5 text-right">
+          {{!-- <h1 class="display-4 font-weight-normal">Dobrodošli</h1> --}}
+          {{!-- <h1 class="font-weight-normal text-secondary">Koga to može zanimati ?</h1>
+          <small class="text-light">Iz fraze u prevodu - <a href="https://www.thebalancecareers.com/to-whom-it-may-concern-2062120"class="text-light"target ="_blank">"For whom it may concern..."</a> </small> --}}
+          {{!-- <a class="btn btn-outline-secondary" href="#">Coming soon</a> --}}
+        </div>
+         {{!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>  --}}
+    </div>
+    </div>
+    <div class="container">
+            {{{body}}}
+    </div>
+    <footer>
+        <div class="container-fluid bg-light p-5">
+            <div class="row justify-content-center">
+                <p class="lead m-2">Amir Čeljo</p>
+           
+                <p class="lead m-2"> &copy; </p>
+           
+                <p class="lead m-2">
+                    2020
+                </p>
+                
+
+                  <a class="" href="https://www.instagram.com/amke.amir/" target="_blank"><i class="fab fa-instagram m-2 fa-2x"></i></a>
+      
+            <a class="" href="https://github.com/Amironac" target="_blank"><i class="fab fa-github m-2 fa-2x"></i></a>  
+               
+      
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+
+<style>
+
+     #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+   
+</style>
+<div class="row text-dark m-auto">
+            <div class="col-sm-2">
+            <p class="lead text-center"><img src="https://img.icons8.com/dotty/50/00000/phone-not-being-used.png"/></p></div>
+            <div class="col-sm-5 mt-3"><p class="lead text-center ">Džemala Bijedića 279D, Bulevar, Sarajevo</p></div>
+            <div class="col-sm-2 mt-3"><p class="lead text-center">+387 61 900 237 </p></div>
+            <div class="col-sm-2 mt-3"><p class="lead text-center">amir.celjo2@gmail.com</p></div>
+           
+
+        </div>
+
+<div class="container justify-content-center ">
+<div id="map"></div>
+</div>
+
+<script>
+    function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 43.839808, lng: 18.322248};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 10, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_Z1AyDNjoBf2mO7V3qCu9u8ZUXnN43e8&callback=initMap">
+</script>
